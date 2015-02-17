@@ -15,5 +15,4 @@ _(Coming soon)_
 _(Coming soon)_
 
 ## License
-Copyright (c) 2015 Tim Giblin  
 Licensed under the MIT license.
