@@ -1,0 +1,38 @@
+#! /usr/bin/env node
+'use strict';
+
+/*
+ * venn-cli
+ * https://github.com/VennHQ/venn-cli
+ *
+ * Copyright (c) 2015 Tim Giblin
+ * Licensed under the MIT license.
+ */
+
+var request = require("request").defaults({
+  json: true
+});
+var Spinner = require('cli-spinner').Spinner;
+var spinner = new Spinner('Downloading.. %s');
+var host = "http://localhost:3000/v1/";
+
+
+var userArgs = process.argv.slice(2);
+var verb = userArgs[0];
+var entity = userArgs[1];
+
+
+
+var endpoint = host.concat(verb).concat("/").concat(entity);
+spinner.start();
+request(endpoint, function(err, resp, body) {
+	if(err) {
+		spinner.stop(true);
+		return console.log("invalid command");
+	}
+	var exec = require('child_process').exec;
+	exec(body.cmd, function (error, stdout, stderr) {
+		spinner.stop(true);
+		console.log("\n".concat(body.completeMsg));
+	});
+});

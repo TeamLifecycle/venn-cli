@@ -1,0 +1,49 @@
+{
+  "name": "venn-cli",
+  "description": "CLI access to Venn's powerful third-party tool environment",
+  "version": "0.1.0",
+  "homepage": "https://github.com/VennHQ/venn-cli",
+  "author": {
+    "name": "Tim Giblin",
+    "email": "tim@getvenn.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VennHQ/venn-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/VennHQ/venn-cli/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/VennHQ/venn-cli/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/venn",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "preferGlobal": "true",
+  "bin": {
+    "venn": "lib/venn.js"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt": "~0.4.5"
+  },
+  "keywords": [],
+  "dependencies": {
+    "chalk": "^0.5.1",
+    "cli-spinner": "^0.2.0",
+    "commander": "^2.6.0",
+    "inquirer": "^0.8.0",
+    "minimist": "^1.1.0",
+    "request": "^2.51.0"
+  }
+}
