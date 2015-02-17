@@ -4,7 +4,9 @@ CLI access to Venn's powerful third-party tool environment
 
 ## Getting Started
 Install the module with:
-`npm install venn-cli`
+```
+npm install venn-cli
+```
 
 ## Documentation
 _(Coming soon)_
