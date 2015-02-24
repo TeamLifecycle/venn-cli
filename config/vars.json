@@ -1,3 +1,7 @@
 {
-	"CLI_API_ENDPOINT": "http://localhost:3000/v1"
+	"CLI_API_ENDPOINT": { 
+		"ROOT": "http://localhost:3000/v1",
+		"LOGIN": "http://localhost:3010/api/user/login",
+		"SIGNUP": "http://localhost:3010/api/user/signup"
+	}
 }
