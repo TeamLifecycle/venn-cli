@@ -2,6 +2,7 @@
 	"CLI_API_ENDPOINT": { 
 		"ROOT": "http://localhost:3010/api",
 		"USER": "http://localhost:3010/api/user",
+		"APP": "http://localhost:3010/api/app",
 		"LOGIN": "http://localhost:3010/api/user/login",
 		"SIGNUP": "http://localhost:3010/api/user/signup"
 	}
